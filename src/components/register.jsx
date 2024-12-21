@@ -50,7 +50,13 @@ function Register(){
                     className="form-control"
                     placeholder="Ingresar contraseña"
                     onChange={(e)=> setPassword(e.target.value)}
+                    required
                 />
+            </div>
+            <div className="d-grid">
+                <button type="submit" className="btn btn-primary">
+                    Registrar
+                </button>
             </div>
 
         </form>
@@ -58,3 +64,4 @@ function Register(){
     );
 
 }
+export default Register;
